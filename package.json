@@ -1,0 +1,32 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple React Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
+    "build:prod": "webpack -p && cp src/index.html dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NipuniBhagya/Simple-React-Boilerplate.git"
+  },
+  "author": "Nipuni Bhagya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NipuniBhagya/Simple-React-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/NipuniBhagya/Simple-React-Boilerplate#readme",
+  "dependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "material-ui": "^0.19.4",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  }
+}
